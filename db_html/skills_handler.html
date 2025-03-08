@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+table{
+border-collapse: collapse;
+width: 100%;
+}
+th, td{
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even){
+background-color: #fafafa;
+}
+th{
+background-color: #7799AA;
+color: white;
+}
+</style>
+</head>
+<body>
+<table>
+<tr><th>skillId</th><th>name</th><th>className</th></tr>
+<tr><td>0</td><td>힐</td><td>Heal</td></tr>
+<tr><td>1</td><td>라이트</td><td>Light</td></tr>
+<tr><td>2</td><td>실드</td><td>Shield</td></tr>
+<tr><td>7</td><td>홀리 웨폰</td><td>HolyWeapon</td></tr>
+<tr><td>8</td><td>큐어 포이즌</td><td>CurePoison</td></tr>
+<tr><td>10</td><td>커스 포이즌</td><td>CursePoison</td></tr>
+<tr><td>11</td><td>인첸트 웨폰</td><td>EnchantWeapon</td></tr>
+<tr><td>12</td><td>디텍션</td><td>Detection</td></tr>
+<tr><td>13</td><td>디크리즈 웨이트</td><td>DecreaseWeight</td></tr>
+<tr><td>17</td><td>턴 언데드</td><td>TurnUndead</td></tr>
+<tr><td>18</td><td>익스트라 힐</td><td>Heal</td></tr>
+<tr><td>19</td><td>커스 블라인드</td><td>CurseBlind</td></tr>
+<tr><td>20</td><td>블레스드 아머</td><td>BlessedArmor</td></tr>
+<tr><td>22</td><td>위크 엘리멘탈</td><td>WeakElemental</td></tr>
+<tr><td>25</td><td>인첸트 덱스터리티</td><td>PhysicalEnchantDex</td></tr>
+<tr><td>26</td><td>웨폰 브레이크</td><td>WeaponBreak</td></tr>
+<tr><td>28</td><td>슬로우</td><td>Slow</td></tr>
+<tr><td>32</td><td>커스 패럴라이즈</td><td>CurseParalyze</td></tr>
+<tr><td>34</td><td>그레이터 힐</td><td>Heal</td></tr>
+<tr><td>35</td><td>테이밍 몬스터</td><td>TamingMonster</td></tr>
+<tr><td>36</td><td>리무브 커스</td><td>RemoveCurse</td></tr>
+<tr><td>38</td><td>마나 드레인</td><td>ManaDrain</td></tr>
+<tr><td>39</td><td>다크니스</td><td>Darkness</td></tr>
+<tr><td>40</td><td>크리에이트 좀비</td><td>CreateZombie</td></tr>
+<tr><td>41</td><td>인챈트 마이티</td><td>PhysicalEnchantStr</td></tr>
+<tr><td>42</td><td>해이스트</td><td>Haste</td></tr>
+<tr><td>43</td><td>캔슬레이션</td><td>Cancellation</td></tr>
+<tr><td>46</td><td>위크니스</td><td>Weakness</td></tr>
+<tr><td>47</td><td>블레스 웨폰</td><td>BlessWeapon</td></tr>
+<tr><td>48</td><td>힐올</td><td>Heal</td></tr>
+<tr><td>49</td><td>프리징 아머</td><td>FreezingArmor</td></tr>
+<tr><td>51</td><td>홀리 워크</td><td>HolyWalk</td></tr>
+<tr><td>53</td><td>그레이터 해이스트</td><td>Haste</td></tr>
+<tr><td>54</td><td>버서커스</td><td>Berserkers</td></tr>
+<tr><td>55</td><td>인챈트 어큐러시</td><td>EnchantAccuracy</td></tr>
+<tr><td>56</td><td>풀힐</td><td>Heal</td></tr>
+<tr><td>59</td><td>인비지블리티</td><td>Invisibility</td></tr>
+<tr><td>60</td><td>리절렉션</td><td>Resurrection</td></tr>
+<tr><td>65</td><td>포그 오브 슬리핑</td><td>Sleep</td></tr>
+<tr><td>66</td><td>셰이프 체인지</td><td>ShapeChange</td></tr>
+<tr><td>67</td><td>이뮨 투 함</td><td>ImmuneToHarm</td></tr>
+<tr><td>71</td><td>카운터 디텍션</td><td>CounterDetection</td></tr>
+<tr><td>72</td><td>데스힐</td><td>DeathHeal</td></tr>
+<tr><td>74</td><td>그레이터 리절렉션</td><td>Resurrection</td></tr>
+<tr><td>76</td><td>디스인티그레이트</td><td>Disintegrate</td></tr>
+<tr><td>77</td><td>앱솔루트 배리어</td><td>AbsoluteBarrier</td></tr>
+<tr><td>84</td><td>지배 변신</td><td>ShapeChangeDomination</td></tr>
+<tr><td>85</td><td>100레벨 변신</td><td>ShapeChange100Level</td></tr>
+<tr><td>86</td><td>쇼크 스턴</td><td>ShockStun</td></tr>
+<tr><td>88</td><td>바운스 어택</td><td>BounceAttack</td></tr>
+<tr><td>96</td><td>블라인드 하이딩</td><td>BlindHiding</td></tr>
+<tr><td>98</td><td>쉐도우 아머</td><td>ShadowArmor</td></tr>
+<tr><td>100</td><td>무빙 악셀레이션</td><td>MovingAcceleration</td></tr>
+<tr><td>102</td><td>쉐도우 슬립</td><td>Sleep</td></tr>
+<tr><td>105</td><td>언케니 닷지</td><td>UncannyDodge</td></tr>
+<tr><td>106</td><td>쉐도우 팽</td><td>ShadowFang</td></tr>
+<tr><td>108</td><td>드레스 마이티</td><td>DressMighty</td></tr>
+<tr><td>109</td><td>드레스 덱스터리티</td><td>DressDexterity</td></tr>
+<tr><td>111</td><td>아머 브레이크</td><td>ArmorBreak</td></tr>
+<tr><td>112</td><td>트루 타겟</td><td>TrueTarget</td></tr>
+<tr><td>113</td><td>글로잉 웨폰</td><td>GlowingWeapon</td></tr>
+<tr><td>114</td><td>샤이닝 실드</td><td>ShiningShield</td></tr>
+<tr><td>121</td><td>그레이스</td><td>Grace</td></tr>
+<tr><td>122</td><td>엠파이어</td><td>Empire</td></tr>
+<tr><td>128</td><td>레지스트 매직</td><td>ResistMagic</td></tr>
+<tr><td>129</td><td>바디 투 마인드</td><td>BodyToMind</td></tr>
+<tr><td>130</td><td>텔레포트 투 마더</td><td>TeleportToMather</td></tr>
+<tr><td>131</td><td>트리플 에로우</td><td>TripleArrow</td></tr>
+<tr><td>132</td><td>엘리멘탈 폴 다운</td><td>ElementalFallDown</td></tr>
+<tr><td>133</td><td>엘븐 그레비티</td><td>ElvenGravity</td></tr>
+<tr><td>136</td><td>클리어 마인드</td><td>ClearMind</td></tr>
+<tr><td>138</td><td>매직 실드</td><td>MagicShield</td></tr>
+<tr><td>144</td><td>리턴 투 네이처</td><td>ReturnToNature</td></tr>
+<tr><td>146</td><td>프로텍션 프롬 엘리멘탈</td><td>ProtectionFromElemental</td></tr>
+<tr><td>147</td><td>어스 웨폰</td><td>EarthWeapon</td></tr>
+<tr><td>148</td><td>아쿠아 샷</td><td>AquaShot</td></tr>
+<tr><td>149</td><td>이글 아이</td><td>EgleEye</td></tr>
+<tr><td>150</td><td>파이어 실드</td><td>FireShield</td></tr>
+<tr><td>153</td><td>서먼 레서 엘리멘탈</td><td>SummonElemental</td></tr>
+<tr><td>154</td><td>댄싱 브레이즈</td><td>DancingBlades</td></tr>
+<tr><td>155</td><td>아이 오브 스톰</td><td>EyeOfStorm</td></tr>
+<tr><td>156</td><td>어스바인드</td><td>EarthBind</td></tr>
+<tr><td>158</td><td>어스 가디언</td><td>EarthGuardian</td></tr>
+<tr><td>159</td><td>아쿠아 프로텍터</td><td>AquaProtecter</td></tr>
+<tr><td>160</td><td>에어리어 오브 사일런스</td><td>AreaOfSilence</td></tr>
+<tr><td>161</td><td>서먼 그레이터 엘리멘탈</td><td>SummonElemental</td></tr>
+<tr><td>162</td><td>버닝 웨폰</td><td>BurningWeapon</td></tr>
+<tr><td>164</td><td>콜 오브 네이처</td><td>CallOfNature</td></tr>
+<tr><td>165</td><td>스톰샷</td><td>StormShot</td></tr>
+<tr><td>167</td><td>아이언 스킨</td><td>IronSkin</td></tr>
+<tr><td>173</td><td>스트라이커 게일</td><td>StrikerGale</td></tr>
+<tr><td>176</td><td>포커스 웨이브</td><td>FocusWave</td></tr>
+<tr><td>177</td><td>허리케인</td><td>Hurricane</td></tr>
+<tr><td>178</td><td>샌드 스톰</td><td>SandStorm</td></tr>
+<tr><td>182</td><td>디스트로이</td><td>Destroy</td></tr>
+<tr><td>184</td><td>각성: 안타라스</td><td>ScalesEarthDragon</td></tr>
+<tr><td>185</td><td>블러드러스트</td><td>BloodLust</td></tr>
+<tr><td>186</td><td>포우 슬레이어</td><td>FouSlayer</td></tr>
+<tr><td>189</td><td>각성: 파푸리온</td><td>ScalesWaterDragon</td></tr>
+<tr><td>191</td><td>썬더 그랩</td><td>ThunderGrab</td></tr>
+<tr><td>193</td><td>아이 오브 드래곤</td><td>Detection</td></tr>
+<tr><td>194</td><td>각성: 발라카스</td><td>ScalesFireDragon</td></tr>
+<tr><td>196</td><td>각성: 린드비오르</td><td>ScalesWindDragon</td></tr>
+<tr><td>198</td><td>쉐도우 스탭</td><td>ShadowStep</td></tr>
+<tr><td>200</td><td>미러 이미지</td><td>MirrorImage</td></tr>
+<tr><td>203</td><td>일루션 오우거</td><td>IllusionOgre</td></tr>
+<tr><td>204</td><td>큐브 오우거</td><td>CubeOgre</td></tr>
+<tr><td>205</td><td>컨센트레이션</td><td>Concentration</td></tr>
+<tr><td>206</td><td>마인드 브레이크</td><td>MindBreak</td></tr>
+<tr><td>207</td><td>본 브레이크</td><td>BoneBreak</td></tr>
+<tr><td>209</td><td>큐브 골렘</td><td>CubeGolem</td></tr>
+<tr><td>210</td><td>페이션스</td><td>Patience</td></tr>
+<tr><td>211</td><td>판타즘</td><td>Sleep</td></tr>
+<tr><td>212</td><td>아이즈 브레이크</td><td>Detection</td></tr>
+<tr><td>214</td><td>큐브 리치</td><td>CubeLich</td></tr>
+<tr><td>215</td><td>인사이트</td><td>Insight</td></tr>
+<tr><td>216</td><td>패닉</td><td>Panic</td></tr>
+<tr><td>217</td><td>리듀스 웨이트</td><td>ReduceWeight</td></tr>
+<tr><td>218</td><td>일루션 아바타</td><td>IllusionAvatar</td></tr>
+<tr><td>219</td><td>큐브 아바타</td><td>CubeAvatar</td></tr>
+<tr><td>221</td><td>임팩트</td><td>Impact</td></tr>
+<tr><td>222</td><td>포커스 스피리츠</td><td>FocusSprits</td></tr>
+<tr><td>224</td><td>하울</td><td>Howl</td></tr>
+<tr><td>227</td><td>파워 그립</td><td>PowerGrip</td></tr>
+<tr><td>228</td><td>토마호크</td><td>Tomahawk</td></tr>
+<tr><td>229</td><td>데스페라도</td><td>Desperado</td></tr>
+<tr><td>240</td><td>프라임</td><td>Prime</td></tr>
+<tr><td>241</td><td>포스 스턴</td><td>ForceStun</td></tr>
+<tr><td>242</td><td>이터니티</td><td>Eternity</td></tr>
+<tr><td>243</td><td>어벤저</td><td>Avenger</td></tr>
+<tr><td>245</td><td>포텐셜</td><td>Potential</td></tr>
+<tr><td>997</td><td>스트라이커 게일 샷 상태</td><td>StrikerGaleShot</td></tr>
+<tr><td>1001</td><td>스테이터스 해이스트</td><td>Haste</td></tr>
+<tr><td>1023</td><td>지룡의 마안</td><td>AntaMaan</td></tr>
+<tr><td>1024</td><td>수룡의 마안</td><td>FafuMaan</td></tr>
+<tr><td>1025</td><td>풍룡의 마안</td><td>LindMaan</td></tr>
+<tr><td>1026</td><td>화룡의 마안</td><td>ValaMaan</td></tr>
+<tr><td>1027</td><td>탄생의 마안</td><td>BirthMaan</td></tr>
+<tr><td>1028</td><td>형상의 마안</td><td>ShapeMaan</td></tr>
+<tr><td>1029</td><td>생명의 마안</td><td>LifeMaan</td></tr>
+<tr><td>1125</td><td>증강 물약: STR</td><td>BuffStrAdd</td></tr>
+<tr><td>1127</td><td>증강 물약: DEX</td><td>BuffDexAdd</td></tr>
+<tr><td>1129</td><td>증강 물약: INT</td><td>BuffIntAdd</td></tr>
+<tr><td>1541</td><td>천하장사버프</td><td>CookDogam</td></tr>
+<tr><td>2655</td><td>정상의 가호</td><td>TopGrace</td></tr>
+<tr><td>3082</td><td>나루토감사캔디</td><td>NaruterCandy</td></tr>
+<tr><td>3085</td><td>메티스축복주문서</td><td>MetisBlessPaper</td></tr>
+<tr><td>3205</td><td>특별한 성장 축복</td><td>BuffSpecialExp</td></tr>
+<tr><td>3206</td><td>특별한 방어 축복</td><td>BuffSpecialDeffense</td></tr>
+<tr><td>3207</td><td>특별한 공격 축복</td><td>BuffSpecialAttack</td></tr>
+<tr><td>3208</td><td>미소피아의 성장 축복</td><td>BuffMisopiaExp</td></tr>
+<tr><td>3209</td><td>미소피아의 방어 축복</td><td>BuffMisopiaDeffense</td></tr>
+<tr><td>3210</td><td>미소피아의 공격 축복</td><td>BuffMisopiaAttack</td></tr>
+<tr><td>3926</td><td>고급깃털 버프</td><td>BuffFeather</td></tr>
+<tr><td>3927</td><td>성장깃털 버프</td><td>BuffFeatherExp</td></tr>
+<tr><td>4342</td><td>이터니티 상태</td><td>Eternity</td></tr>
+<tr><td>4455</td><td>흑룡의 마안</td><td>BlackMaan</td></tr>
+<tr><td>4456</td><td>절대의 마안</td><td>AbsoluteMaan</td></tr>
+<tr><td>4535</td><td>자켄 버프</td><td>BuffZaken</td></tr>
+<tr><td>4536</td><td>자켄 버프 할파스</td><td>BuffZaken</td></tr>
+<tr><td>4654</td><td>군주의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4655</td><td>기사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4656</td><td>다크엘프의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4657</td><td>마법사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4658</td><td>요정의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4659</td><td>용기사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4660</td><td>환술사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4661</td><td>전사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4662</td><td>검사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4663</td><td>창기사의 가호 1위</td><td>ClassTopGrace1st</td></tr>
+<tr><td>4790</td><td>홀드 상태</td><td>Hold</td></tr>
+<tr><td>4842</td><td>북쪽 탑의 축복</td><td>TowerBuffN</td></tr>
+<tr><td>4845</td><td>동쪽 탑의 축복</td><td>TowerBuffEBless</td></tr>
+<tr><td>4847</td><td>남쪽 탑의 축복</td><td>TowerBuffS</td></tr>
+<tr><td>4848</td><td>서쪽 탑의 축복</td><td>TowerBuffW</td></tr>
+<tr><td>4850</td><td>동쪽 탑의 저주</td><td>TowerBuffECurse</td></tr>
+<tr><td>4884</td><td>스턴 상태</td><td>ShockStun</td></tr>
+<tr><td>4914</td><td>흑사의 코인 버프</td><td>BuffBlackCoin</td></tr>
+<tr><td>4915</td><td>아우라키아 정화</td><td>ArrowOfAurakia</td></tr>
+<tr><td>5000</td><td>저지먼트</td><td>Judgement</td></tr>
+<tr><td>5001</td><td>팬텀</td><td>Phantom</td></tr>
+<tr><td>5002</td><td>판테라</td><td>Pantera</td></tr>
+<tr><td>5004</td><td>헬파이어</td><td>Howl</td></tr>
+<tr><td>5007</td><td>팬텀 상태</td><td>Phantom</td></tr>
+<tr><td>5008</td><td>팬텀 리퍼 상태</td><td>Phantom</td></tr>
+<tr><td>5009</td><td>팬텀 데스 상태</td><td>Phantom</td></tr>
+<tr><td>5015</td><td>판테라 쇼크</td><td>Pantera</td></tr>
+<tr><td>5016</td><td>아수라</td><td>Asura</td></tr>
+<tr><td>5021</td><td>쇼크 어택:텔레포트</td><td>ShockAttack</td></tr>
+<tr><td>5025</td><td>토마호크: 헌터</td><td>TomahawkHunter</td></tr>
+<tr><td>5026</td><td>템페스트</td><td>Tempest</td></tr>
+<tr><td>5027</td><td>타이런트</td><td>Tyrant</td></tr>
+<tr><td>5029</td><td>쉐도우 스탭 체이서 상태</td><td>ShadowStep</td></tr>
+<tr><td>5032</td><td>타라스의 상급 마법</td><td>BuffTarasHightMagic</td></tr>
+<tr><td>5035</td><td>인스네어</td><td>Ensnare</td></tr>
+<tr><td>5036</td><td>오시리스</td><td>Osiris</td></tr>
+<tr><td>5045</td><td>타이런트(엑스큐션): 공격 속도 감소</td><td>Tyrant</td></tr>
+<tr><td>5046</td><td>브레이브 유니언</td><td>BraveUnion</td></tr>
+<tr><td>5047</td><td>컨쿼러: 스턴 상태</td><td>ConquerorStun</td></tr>
+<tr><td>5049</td><td>포우 슬레이어(포스): 스턴 상태</td><td>ShockStun</td></tr>
+<tr><td>5050</td><td>얼터네이트</td><td>Alternate</td></tr>
+<tr><td>5052</td><td>뱅가드</td><td>Vanguard</td></tr>
+<tr><td>5053</td><td>리커버리</td><td>Recovery</td></tr>
+<tr><td>5054</td><td>프레셔</td><td>Pressure</td></tr>
+<tr><td>5055</td><td>크루얼</td><td>Cruel</td></tr>
+<tr><td>5056</td><td>베히모스</td><td>Behemoth</td></tr>
+<tr><td>5057</td><td>베히모스: 이동 속도 감소, 귀환 불가(이동 가능) 상태</td><td>BehemothDebuff</td></tr>
+<tr><td>5058</td><td>체인 리액션</td><td>ChainReaction</td></tr>
+<tr><td>5059</td><td>체인 리액션 디버프</td><td>ChainReactionStatus</td></tr>
+<tr><td>5060</td><td>체인 리액션 디버프</td><td>ChainReactionStatus</td></tr>
+<tr><td>5109</td><td>프레셔:데스 리콜</td><td>PressureDeathRecall</td></tr>
+<tr><td>5111</td><td>콜 클랜 어드밴스</td><td>CalClanAdvance</td></tr>
+<tr><td>5150</td><td>디스인티그레이트: 네메시스 상태</td><td>Disintegrate</td></tr>
+<tr><td>5151</td><td>디바인 프로텍션</td><td>DivineProtection</td></tr>
+<tr><td>5155</td><td>팬텀 레퀴엠 상태</td><td>Phantom</td></tr>
+<tr><td>5156</td><td>쇼크 어택</td><td>ShockAttack</td></tr>
+<tr><td>5157</td><td>버닝 샷</td><td>BurningShot</td></tr>
+<tr><td>5169</td><td>군주의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5170</td><td>기사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5171</td><td>다크엘프의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5172</td><td>마법사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5173</td><td>요정의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5174</td><td>용기사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5175</td><td>환술사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5176</td><td>전사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5177</td><td>검사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5178</td><td>창기사의 가호 2위</td><td>ClassTopGrace2st</td></tr>
+<tr><td>5179</td><td>군주의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5180</td><td>기사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5181</td><td>다크엘프의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5182</td><td>마법사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5183</td><td>요정의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5184</td><td>용기사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5185</td><td>환술사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5186</td><td>전사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5187</td><td>검사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5188</td><td>창기사의 가호 3위</td><td>ClassTopGrace3st</td></tr>
+<tr><td>5216</td><td>드래곤의 경험치 물약</td><td>DragonExpPotion</td></tr>
+<tr><td>5464</td><td>100레벨 축하 버프</td><td>BuffLevel100Congrats</td></tr>
+<tr><td>5465</td><td>메티스의 축복</td><td>BuffBlessOfMetis</td></tr>
+<tr><td>5495</td><td>선장의 시야</td><td>BuffVisualOfCaptain</td></tr>
+<tr><td>5499</td><td>아인하사드의 신의 인덱스1</td><td>EinhasadFaithIndex_1</td></tr>
+<tr><td>5513</td><td>아인하사드의 신의 그룹1</td><td>EinhasadFaithGroup_1</td></tr>
+<tr><td>5514</td><td>아인하사드의 신의 인덱스2</td><td>EinhasadFaithIndex_2</td></tr>
+<tr><td>5515</td><td>아인하사드의 신의 인덱스3</td><td>EinhasadFaithIndex_3</td></tr>
+<tr><td>5516</td><td>아인하사드의 신의 인덱스4</td><td>EinhasadFaithIndex_4</td></tr>
+<tr><td>5524</td><td>PC방 전용 EXP +10</td><td>BuffPCCafeExp</td></tr>
+<tr><td>5525</td><td>아인하사드의 신의 그룹2</td><td>EinhasadFaithGroup_2</td></tr>
+<tr><td>5526</td><td>아인하사드의 신의 인덱스5</td><td>EinhasadFaithIndex_5</td></tr>
+<tr><td>5527</td><td>아인하사드의 신의 인덱스6</td><td>EinhasadFaithIndex_6</td></tr>
+<tr><td>5528</td><td>아인하사드의 신의 인덱스7</td><td>EinhasadFaithIndex_7</td></tr>
+<tr><td>5529</td><td>아인하사드의 신의 인덱스8</td><td>EinhasadFaithIndex_8</td></tr>
+<tr><td>10026</td><td>린드비오르(안식)</td><td>DragonAnsig</td></tr>
+<tr><td>10027</td><td>안타라스(안식)</td><td>DragonAnsig</td></tr>
+<tr><td>10028</td><td>발라카스(안식)</td><td>DragonAnsig</td></tr>
+<tr><td>10029</td><td>파푸리온(안식)</td><td>DragonAnsig</td></tr>
+<tr><td>10057</td><td>리콜</td><td>Recall</td></tr>
+<tr><td>10071</td><td>프리즈</td><td>FreezeStatus</td></tr>
+<tr><td>10152</td><td>인탱글</td><td>Slow</td></tr>
+<tr><td>10499</td><td>사엘 버프</td><td>BuffSael</td></tr>
+<tr><td>15573</td><td>몬스터 광역 데스힐</td><td>DeathHealMonster</td></tr>
+<tr><td>15574</td><td>몬스터 광역 데스포션</td><td>DeathPotionMonster</td></tr>
+<tr><td>15575</td><td>간수장 타로스 광역 데스힐</td><td>DeathHealMonster</td></tr>
+<tr><td>15576</td><td>간수장 타로스 광역 데스포션/사일런스</td><td>TarosSkill</td></tr>
+<tr><td>20016</td><td>범위 독 구름 1번 모션 10피</td><td>StatePoison</td></tr>
+<tr><td>22000</td><td>운세버프(매우좋은)</td><td>FeatherBuffA</td></tr>
+<tr><td>22001</td><td>운세버프(좋음)</td><td>FeatherBuffB</td></tr>
+<tr><td>22002</td><td>운세버프(보통)</td><td>FeatherBuffC</td></tr>
+<tr><td>22003</td><td>운세버프(나쁨)</td><td>FeatherBuffD</td></tr>
+<tr><td>22015</td><td>안타라스 혈흔</td><td>AntaBuff</td></tr>
+<tr><td>22016</td><td>파푸리온 혈흔</td><td>FafuBuff</td></tr>
+<tr><td>22055</td><td>몬스터 범위 스턴 30번</td><td>StunMonster</td></tr>
+<tr><td>22056</td><td>몬스터 캔슬레이션</td><td>CancellationMonster</td></tr>
+<tr><td>22060</td><td>린드비오르 혈흔</td><td>LindBuff</td></tr>
+<tr><td>22061</td><td>오만보스 [광역 데스페라도]</td><td>DesperadoMonster</td></tr>
+<tr><td>25004</td><td>메이든 어그로</td><td>MaidenAgro</td></tr>
+<tr><td>30000</td><td>몹 슬로우 18번 모션</td><td>Slow</td></tr>
+<tr><td>30001</td><td>몹 슬로우 1번</td><td>Slow</td></tr>
+<tr><td>30002</td><td>몹 커스 패럴라이즈 19번</td><td>CurseParalyze</td></tr>
+<tr><td>30003</td><td>코카굳기</td><td>Freeze</td></tr>
+<tr><td>30004</td><td>바실굳기</td><td>Freeze</td></tr>
+<tr><td>30005</td><td>몬스터 범위 스턴 19번</td><td>StunMonster</td></tr>
+<tr><td>30006</td><td>몬스터 범위 스턴 18번</td><td>StunMonster</td></tr>
+<tr><td>30007</td><td>몹 커스 패럴라이즈 18번</td><td>CurseParalyze</td></tr>
+<tr><td>30008</td><td>몹 디지즈 30번</td><td>Disease</td></tr>
+<tr><td>30009</td><td>몹 위크니스 1번</td><td>Weakness</td></tr>
+<tr><td>30010</td><td>몬스터 범위 스턴 20번</td><td>StunMonster</td></tr>
+<tr><td>30079</td><td>몬스터 디지즈 1번 모션</td><td>Disease</td></tr>
+<tr><td>30081</td><td>몬스터 스턴 30번</td><td>StunMonster</td></tr>
+<tr><td>30084</td><td>몹 윈드 셰클</td><td>WindShackle</td></tr>
+<tr><td>40048</td><td>범위 독 구름 18번 모션 50피</td><td>StatePoison</td></tr>
+<tr><td>50000</td><td>몬스터 이동</td><td>MovingMonster</td></tr>
+<tr><td>50001</td><td>몬스터 트리플 애로우</td><td>TripleArrowMonster</td></tr>
+<tr><td>50002</td><td>몬스터 포우 슬레이어</td><td>FouSlayerMonster</td></tr>
+<tr><td>50006</td><td>코마a</td><td>ComaA</td></tr>
+<tr><td>50007</td><td>코마b</td><td>ComaB</td></tr>
+<tr><td>50011</td><td>크레이 버프</td><td>BuffCray</td></tr>
+<tr><td>50013</td><td>발라카스 버프</td><td>BuffBalracas</td></tr>
+<tr><td>71052</td><td>넉백 지배 아이리스</td><td>Nuckback</td></tr>
+<tr><td>71054</td><td>넉백 아이리스</td><td>Nuckback</td></tr>
+<tr><td>100028</td><td>발라카스 몬스터 소환</td><td>MonsterSpawn</td></tr>
+<tr><td>100029</td><td>그레이터 슬로우</td><td>Slow</td></tr>
+<tr><td>120016</td><td>범위 독 구름 19번 모션 50피</td><td>StatePoison</td></tr>
+<tr><td>120384</td><td>군터 버프</td><td>BuffGunter</td></tr>
+<tr><td>130009</td><td>몹 위크니스 19번</td><td>Weakness</td></tr>
+<tr><td>150010</td><td>발록 기모으기</td><td>BallogFire</td></tr>
+<tr><td>150012</td><td>발록 몬스터 소환</td><td>MonsterSpawn</td></tr>
+<tr><td>150015</td><td>몬스터 아이스랜스</td><td>IceLanceMonster</td></tr>
+<tr><td>150021</td><td>거대 번개</td><td>BigLightning</td></tr>
+<tr><td>150030</td><td>하피 퀸 토네이도</td><td>HapeequeenTonado</td></tr>
+<tr><td>150097</td><td>몹 블라인드 하이딩</td><td>BlindHiding</td></tr>
+<tr><td>167777</td><td>윈드 셰클</td><td>WindShackle</td></tr>
+<tr><td>170027</td><td>범위 프리즈 18번</td><td>FreezeStatus</td></tr>
+<tr><td>170028</td><td>도망 텔레포트</td><td>RunTeleport</td></tr>
+<tr><td>180104</td><td>몬스터 판테라</td><td>PanteraMonster</td></tr>
+<tr><td>430003</td><td>넉백 리치</td><td>Nuckback</td></tr>
+<tr><td>666000</td><td>몬스터 스턴 19번</td><td>StunMonster</td></tr>
+<tr><td>666001</td><td>몬스터 스턴 18번</td><td>StunMonster</td></tr>
+<tr><td>790030</td><td>아이스 랜스</td><td>IceLance</td></tr>
+<tr><td>790031</td><td>디지즈</td><td>Disease</td></tr>
+<tr><td>790079</td><td>어드밴스 스피릿</td><td>AdvanceSpirit</td></tr>
+<tr><td>929292</td><td>몬스터 앱솔루트 블레이드</td><td>AbsoluteBladeMonster</td></tr>
+<tr><td>929293</td><td>몬스터 이뮨 블레이드</td><td>ImmuneBladeMonster</td></tr>
+</table>
+</body>
+</html>
