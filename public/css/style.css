@@ -1,0 +1,515 @@
+/* Main styles for LineageII Remastered Database - Onyx & Terracotta Theme */
+
+/* Color Variables */
+:root {
+    --onyx-dark: #242624;
+    --onyx-main: #353935;
+    --onyx-light: #474A47;
+    --onyx-lighter: #5A5D5A;
+    --terracotta: #E35336;
+    --terracotta-light: #F07960;
+    --terracotta-dark: #C43A20;
+    --text-light: #F0F0F0;
+    --text-muted: #B0B0B0;
+    --card-bg: #2A2C2A;
+    --border-color: #474A47;
+    --success-color: #6BC76B;
+    --warning-color: #F0C64C;
+    --danger-color: #E35336;
+    --info-color: #5DADE2;
+}
+
+/* General Styles */
+body {
+    background-color: var(--onyx-main);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--terracotta);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--terracotta-light);
+    text-decoration: underline;
+}
+
+/* Bootstrap Overrides */
+.navbar {
+    background-color: var(--onyx-dark) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-light);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--terracotta);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--terracotta-dark);
+    border-color: var(--terracotta-dark);
+}
+
+.btn-outline-primary {
+    color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--onyx-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-footer {
+    background-color: var(--onyx-dark);
+    border-top: 1px solid var(--border-color);
+}
+
+.table {
+    color: var(--text-light);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--onyx-light);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--onyx-lighter);
+}
+
+.table th {
+    background-color: var(--onyx-dark);
+}
+
+.form-control, .form-select {
+    background-color: var(--onyx-light);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--onyx-light);
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 0.25rem rgba(227, 83, 54, 0.25);
+    color: var(--text-light);
+}
+
+.input-group-text {
+    background-color: var(--onyx-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+.pagination .page-link {
+    background-color: var(--onyx-light);
+    border-color: var(--border-color);
+    color: var(--text-light);
+}
+
+.pagination .page-link:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.alert-primary {
+    background-color: rgba(227, 83, 54, 0.2);
+    border-color: rgba(227, 83, 54, 0.4);
+    color: var(--text-light);
+}
+
+.alert-info {
+    background-color: rgba(93, 173, 226, 0.2);
+    border-color: rgba(93, 173, 226, 0.4);
+    color: var(--text-light);
+}
+
+.alert-warning {
+    background-color: rgba(240, 198, 76, 0.2);
+    border-color: rgba(240, 198, 76, 0.4);
+    color: var(--text-light);
+}
+
+.alert-danger {
+    background-color: rgba(227, 83, 54, 0.2);
+    border-color: rgba(227, 83, 54, 0.4);
+    color: var(--text-light);
+}
+
+.alert-success {
+    background-color: rgba(107, 199, 107, 0.2);
+    border-color: rgba(107, 199, 107, 0.4);
+    color: var(--text-light);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--onyx-lighter) !important;
+}
+
+.badge.bg-primary {
+    background-color: var(--terracotta) !important;
+}
+
+.dropdown-menu {
+    background-color: var(--onyx-dark);
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-light);
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: var(--onyx-light);
+    color: var(--terracotta);
+}
+
+/* Item Grade Colors */
+.grade-only {
+    color: #F07960;
+    font-weight: bold;
+}
+
+.grade-myth {
+    color: #EE6C5D;
+    font-weight: bold;
+}
+
+.grade-legend {
+    color: #E35336;
+    font-weight: bold;
+}
+
+.grade-hero {
+    color: #EB7952;
+    font-weight: bold;
+}
+
+.grade-rare {
+    color: #F08A6E;
+    font-weight: bold;
+}
+
+.grade-advanced {
+    color: #F29A7F;
+    font-weight: bold;
+}
+
+.grade-normal {
+    color: #F5AE97;
+}
+
+/* Drop Rate Colors */
+.drop-rate-very-rare {
+    color: #E35336;
+    font-weight: bold;
+}
+
+.drop-rate-rare {
+    color: #EB7952;
+    font-weight: bold;
+}
+
+.drop-rate-uncommon {
+    color: #F08A6E;
+}
+
+.drop-rate-common {
+    color: #F5AE97;
+}
+
+/* Element Colors */
+.element.fire {
+    color: #E35336;
+    margin-right: 8px;
+}
+
+.element.water {
+    color: #5DADE2;
+    margin-right: 8px;
+}
+
+.element.wind {
+    color: #7FCA9B;
+    margin-right: 8px;
+}
+
+.element.earth {
+    color: #F0C64C;
+    margin-right: 8px;
+}
+
+/* Alignment Colors */
+.alignment-chaotic {
+    color: #E35336;
+}
+
+.alignment-evil {
+    color: #EB7952;
+}
+
+.alignment-neutral {
+    color: #B0B0B0;
+}
+
+.alignment-good {
+    color: #7FCA9B;
+}
+
+.alignment-lawful {
+    color: #5DADE2;
+}
+
+/* Class Icons for Item Permissions */
+.class-icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.class-icon img {
+    margin-right: 8px;
+}
+
+.class-icon.permitted {
+    background-color: rgba(107, 199, 107, 0.1);
+    border: 1px solid rgba(107, 199, 107, 0.5);
+}
+
+.class-icon.restricted {
+    background-color: rgba(227, 83, 54, 0.1);
+    border: 1px solid rgba(227, 83, 54, 0.3);
+    opacity: 0.6;
+}
+
+/* Item Icons */
+.item-icon {
+    width: 64px;
+    height: 64px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 4px;
+    background-color: var(--onyx-dark);
+}
+
+/* Stat Cards on Index Page */
+.stat-card {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--onyx-light);
+    border: 1px solid var(--border-color);
+}
+
+.stat-card h6 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: var(--terracotta);
+}
+
+/* Featured Items, NPCs, etc. */
+.featured-item, .featured-npc {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--onyx-light);
+    border: 1px solid var(--border-color);
+}
+
+/* Map view */
+.map-wrapper {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--onyx-dark);
+}
+
+.map-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.map-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--terracotta);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.map-point:hover {
+    transform: scale(1.5);
+}
+
+.map-point.npc {
+    background-color: var(--info-color);
+}
+
+.map-point.boss {
+    background-color: var(--danger-color);
+}
+
+.map-point.quest {
+    background-color: var(--success-color);
+}
+
+/* Skill icons */
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--onyx-dark);
+}
+
+/* Class sections */
+.class-section {
+    border-left: 4px solid var(--terracotta);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Boss timer countdown */
+.boss-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.boss-spawning-soon {
+    color: var(--terracotta);
+}
+
+.boss-spawned {
+    color: var(--success-color);
+}
+
+/* Search results highlighting */
+.search-highlight {
+    background-color: rgba(227, 83, 54, 0.3);
+    color: var(--terracotta-light);
+    padding: 2px;
+    border-radius: 2px;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--onyx-dark);
+    border-top: 1px solid var(--border-color);
+}
+
+footer a {
+    color: var(--terracotta);
+}
+
+footer a:hover {
+    color: var(--terracotta-light);
+}
+
+/* Back to top button */
+#back-to-top-btn {
+    background-color: var(--terracotta);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#back-to-top-btn:hover {
+    background-color: var(--terracotta-dark);
+}
+
+/* Jumbotron styling */
+.jumbotron {
+    background-color: var(--onyx-dark) !important;
+    border: 1px solid var(--border-color);
+}
+
+/* List group styling */
+.list-group-item {
+    background-color: var(--onyx-light);
+    border-color: var(--border-color);
+    color: var(--text-light);
+}
+
+.list-group-item-action:hover {
+    background-color: var(--onyx-lighter);
+    color: var(--terracotta);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .col-md-6, .col-md-4, .col-md-8 {
+        margin-bottom: 15px;
+    }
+    
+    .featured-item, .featured-npc {
+        margin-bottom: 10px;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .card {
+        border: 1px solid #ddd;
+        box-shadow: none;
+        background-color: white;
+    }
+    
+    .card-header {
+        background-color: #f8f9fa !important;
+        color: #333 !important;
+        border-bottom: 1px solid #ddd;
+    }
+}

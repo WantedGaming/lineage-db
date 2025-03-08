@@ -1,0 +1,423 @@
+/* Admin panel styles for LineageII Remastered Database - Onyx & Terracotta Theme */
+
+/* Color Variables */
+:root {
+    --onyx-dark: #242624;
+    --onyx-main: #353935;
+    --onyx-light: #474A47;
+    --onyx-lighter: #5A5D5A;
+    --terracotta: #E35336;
+    --terracotta-light: #F07960;
+    --terracotta-dark: #C43A20;
+    --text-light: #F0F0F0;
+    --text-muted: #B0B0B0;
+    --card-bg: #2A2C2A;
+    --border-color: #474A47;
+    --success-color: #6BC76B;
+    --warning-color: #F0C64C;
+    --danger-color: #E35336;
+    --info-color: #5DADE2;
+}
+
+/* General Admin Styles */
+body {
+    background-color: var(--onyx-main);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px;
+}
+
+a {
+    color: var(--terracotta);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--terracotta-light);
+    text-decoration: underline;
+}
+
+/* Admin Sidebar */
+#sidebar {
+    background-color: var(--onyx-dark) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    padding-top: 15px;
+}
+
+#sidebar .nav-link {
+    color: var(--text-light);
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#sidebar .nav-link:hover {
+    background-color: var(--onyx-light);
+    color: var(--terracotta);
+}
+
+#sidebar .nav-link.active {
+    background-color: var(--terracotta);
+    color: white;
+}
+
+#sidebar .nav-link i {
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+/* Admin Cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: var(--onyx-dark);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.card-footer {
+    background-color: var(--onyx-dark);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Admin Tables */
+.table {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: var(--onyx-dark);
+    border-color: var(--border-color);
+}
+
+.table td {
+    border-color: var(--border-color);
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--onyx-light);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--onyx-lighter);
+}
+
+/* Admin Forms */
+.form-control, .form-select {
+    background-color: var(--onyx-light);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--onyx-light);
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 0.25rem rgba(227, 83, 54, 0.25);
+    color: var(--text-light);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+.input-group-text {
+    background-color: var(--onyx-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+label {
+    color: var(--text-light);
+}
+
+.form-check-input {
+    background-color: var(--onyx-light);
+    border-color: var(--border-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+/* Admin Buttons */
+.btn-primary {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--terracotta-dark);
+    border-color: var(--terracotta-dark);
+}
+
+.btn-secondary {
+    background-color: var(--onyx-lighter);
+    border-color: var(--onyx-lighter);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: var(--onyx-light);
+    border-color: var(--onyx-light);
+}
+
+.btn-outline-primary {
+    color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.btn-outline-secondary {
+    color: var(--text-light);
+    border-color: var(--onyx-lighter);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--onyx-lighter);
+    border-color: var(--onyx-lighter);
+    color: var(--text-light);
+}
+
+/* Admin Stats Cards */
+.bg-primary {
+    background-color: var(--terracotta) !important;
+}
+
+.bg-danger {
+    background-color: #D9534F !important;
+}
+
+.bg-success {
+    background-color: #5CB85C !important;
+}
+
+.bg-info {
+    background-color: #5BC0DE !important;
+}
+
+.bg-warning {
+    background-color: #F0AD4E !important;
+}
+
+/* Admin Pagination */
+.pagination .page-link {
+    background-color: var(--onyx-light);
+    border-color: var(--border-color);
+    color: var(--text-light);
+}
+
+.pagination .page-link:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+/* Admin Alerts */
+.alert {
+    border-radius: 4px;
+}
+
+.alert-info {
+    background-color: rgba(93, 173, 226, 0.2);
+    border-color: rgba(93, 173, 226, 0.4);
+    color: var(--text-light);
+}
+
+.alert-warning {
+    background-color: rgba(240, 198, 76, 0.2);
+    border-color: rgba(240, 198, 76, 0.4);
+    color: var(--text-light);
+}
+
+.alert-danger {
+    background-color: rgba(227, 83, 54, 0.2);
+    border-color: rgba(227, 83, 54, 0.4);
+    color: var(--text-light);
+}
+
+.alert-success {
+    background-color: rgba(107, 199, 107, 0.2);
+    border-color: rgba(107, 199, 107, 0.4);
+    color: var(--text-light);
+}
+
+/* Admin Badges */
+.badge.bg-secondary {
+    background-color: var(--onyx-lighter) !important;
+}
+
+.badge.bg-primary {
+    background-color: var(--terracotta) !important;
+}
+
+/* File Upload */
+.custom-file-label {
+    background-color: var(--onyx-light);
+    border-color: var(--border-color);
+    color: var(--text-light);
+}
+
+.custom-file-label::after {
+    background-color: var(--onyx-dark);
+    color: var(--text-light);
+}
+
+/* Lists */
+.list-group-item {
+    background-color: var(--onyx-light);
+    border-color: var(--border-color);
+    color: var(--text-light);
+}
+
+.list-group-item-action:hover {
+    background-color: var(--onyx-lighter);
+    color: var(--terracotta);
+}
+
+/* Admin Footer */
+footer {
+    background-color: var(--onyx-dark);
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+
+/* Admin Login Page Specific */
+.login-container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-container .card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Dashboard Stat Cards */
+.card-stats {
+    overflow: hidden;
+}
+
+.card-stats i {
+    opacity: 0.7;
+}
+
+/* CodeMirror Editor (if used) */
+.CodeMirror {
+    background-color: var(--onyx-light) !important;
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-color);
+    height: 300px;
+}
+
+.CodeMirror-gutters {
+    background-color: var(--onyx-dark) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+.CodeMirror-linenumber {
+    color: var(--text-muted) !important;
+}
+
+/* Admin Tooltips */
+.tooltip .tooltip-inner {
+    background-color: var(--onyx-dark);
+    border: 1px solid var(--border-color);
+}
+
+.tooltip .arrow::before {
+    border-top-color: var(--onyx-dark);
+}
+
+/* Admin Modals */
+.modal-content {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+.close {
+    color: var(--text-light);
+}
+
+/* Admin Activity Log */
+.activity-log-item {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.activity-log-item:last-child {
+    border-bottom: none;
+}
+
+/* Admin Media Preview */
+.media-preview {
+    background-color: var(--onyx-dark);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.media-preview img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+/* Admin Tabs */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-light);
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--border-color) var(--border-color) transparent;
+    color: var(--terracotta);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--terracotta);
+    background-color: var(--card-bg);
+    border-color: var(--border-color) var(--border-color) var(--card-bg);
+}
+
+.tab-content {
+    padding: 15px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Loading Spinner */
+.spinner-border.text-primary {
+    color: var(--terracotta) !important;
+}
